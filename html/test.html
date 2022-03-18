@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <style>
+        * {
+            margin: 0px auto;
+            padding: 0px;
+        }
+        
+        body {
+            background-image: url(../img/background.jpg);
+        }
+        
+        .wrapper {
+            width: 1089px;
+            height: 800px;
+            background-color: antiquewhite;
+        }
+        
+        nav {
+            width: 1089px;
+            height: 50px;
+            line-height: 50px;
+            background-color: aqua;
+        }
+        
+        .menu li {
+            float: left;
+            height: 100%;
+            width: 150px;
+            background-color: aqua;
+            line-height: 50px;
+            list-style: none;
+            text-indent: 20px;
+            position: relative;
+        }
+        
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .menu li:hover {
+            background-color: blueviolet;
+        }
+        
+        li:hover>a {
+            color: yellow;
+            font-style: italic;
+        }
+        
+        .menu li .submenu {
+            display: none;
+        }
+        
+        .menu li:hover .submenu {
+            display: block;
+            position: absolute;
+        }
+        
+        header {
+            height: 150px;
+            width: 100%;
+            background-image: url(../img/header.jpg);
+            text-shadow: 0px 10px 20px;
+            font-size: 60px;
+            text-align: center;
+        }
+        
+        aside {
+            width: 400px;
+            height: 100%;
+            float: left;
+        }
+        
+        section {
+            width: 689px;
+            height: 100%;
+            float: left;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        .actionForm button[type="submit"] {
+            padding: 10px;
+            background: blue;
+            color: #fff;
+            border: 0;
+            outline: 0;
+        }
+        
+        footer {
+            float: left;
+            height: 10%;
+            width: 1089px;
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul class="menu">
+                <li><a href="">HOME</a></li>
+                <li><a href="">SERVICES</a>
+                    <ul class="submenu">
+                        <li><a href="">PHONE</a></li>
+                        <li><a href="">TIVI</a></li>
+                        <li><a href="">INTERNET</a></li>
+                    </ul>
+                </li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">HELP</a></li>
+            </ul>
+            <span>
+                <form action="" method="post">
+                    <label for="lblEmail">Email : </label>
+                    <input type="email" name="txtEmail" id="txtEmail" required placeholder=" Nhap email" >
+                    <input type="submit" value="GO" style="border-radius: 50%;padding: 3px;">
+
+                </form>
+            </span>
+        </nav>
+        <header>HELLO</header>
+        <div class="content">
+            <aside>
+                <article>
+                    <h2>Tắm biển</h2>
+                    <img src="../img/h1.jpg" alt="" srcset="">
+
+                </article>
+
+                <article>
+                    <h2>Leo núi</h2>
+                    <img src="../img/h2.jpg" alt="" srcset="">
+
+                </article>
+                <article>
+                    <h2>Ngắm tuyết</h2>
+                    <img src="../img/h3.jpg" alt="" srcset="">
+
+                </article>
+
+
+            </aside>
+            <section>
+                <form action="" method="post"></form>
+            </section>
+
+            <form action="" method="post" class="actionForm">
+                <h2> Đăng Ký</h2>
+                <th colspan "2">Nhập Họ và tên</th>
+
+                <input type="text" placeholder="Họ và tên" name="yourname" /><br><br>
+                <th colspan "2">Nhập Email</th>
+
+                <input type="email" placeholder="Email" name="txtEmail" /><br><br>
+                <th colspan "2">Nhập CMND</th>
+                <input type="text" placeholder="CMND" name="yourcmnd" /><br><br>
+                <th colspan "2">Nhập địa chỉ</th>
+
+                <input type="text" placeholder="Địa chỉ" name="addr" /><br><br>
+                <th colspan "2">Nhập ngày đăng ký</th>
+
+                <input type="date" placeholder="Ngày Đăng Ký" name="ngaydangky" /><br><br>
+
+                <button type="submit">Đăng ký </button>
+
+            </form>
+        </div>
+        <div class="clear"></div>
+        <footer>
+            20093941_LeSonHai
+
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
